@@ -1,23 +1,29 @@
-#pragma once
+#ifndef PLATES_H
+#define PLATES_H
+#include <iostream>
 #include "Ingredientes.h"
 #include <vector>
 #include <string>
 
 using namespace std;
 
-class Platos
-{
+
+class Plates {
+
     public:
-        vector<Ingredientes*>ingredientesPlatos;
+    
+        //vector <Ingredientes*> ingredientesPlatos;
         int cantidadIngredientes;
         string comentario;
         int cantSabor;
         int vecesPreparado;
         int precioPlato;
         int valoracionPlato;
-        Platos();
-        ~Platos();
-        Platos(string, int, int, int, int, int);
+
+    public:
+
+        Plates();
+        Plates(string, int, int, int, int, int);
         void setCantidadIngredientes(int);
         int getCantidadIngredientes();
         void setComentario(string);
@@ -32,5 +38,6 @@ class Platos
         void setValoracionPlato(int);
 
 };
+#endif
 
 

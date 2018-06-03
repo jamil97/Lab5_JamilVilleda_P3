@@ -1,4 +1,4 @@
-#include "Platos.h"
+#include "Plates.h"
 #include <string>
 #include "Ingredientes.h"
 #include <vector>
@@ -59,15 +59,11 @@ void Platos::setValoracionPlato(int valor){
 }
 */
 
+Plates::Plates(){
 
-Platos::Platos(){
 }
 
-Platos::~Platos(){
-    
-}
-
-Platos::Platos(string comment, int cantidadIng, int cantidadSabor, int preparado, int price, int valor){
+Plates::Plates(string comment, int cantidadIng, int cantidadSabor, int preparado, int price, int valor){
     this->comentario = comment;
     this->cantidadIngredientes = cantidadIng;
     this->cantSabor = cantidadSabor;
@@ -76,51 +72,51 @@ Platos::Platos(string comment, int cantidadIng, int cantidadSabor, int preparado
     this->valoracionPlato = valor;
 }
 
-void Platos::setCantidadIngredientes(int cant){
+void Plates::setCantidadIngredientes(int cant){
     cantidadIngredientes = cant;
 }
 
-int Platos::getCantidadIngredientes(){
+int Plates::getCantidadIngredientes(){
     return cantidadIngredientes;
 }
 
-void Platos::setComentario(string com){
+void Plates::setComentario(string com){
     comentario = com;
 }
 
-string Platos::getComentario(){
+string Plates::getComentario(){
     return comentario;
 }
 
-void Platos::setCantidadSabor(int cantS){
+void Plates::setCantidadSabor(int cantS){
     cantSabor = cantS;
 }
 
-int Platos::getCantidadSabor(){
+int Plates::getCantidadSabor(){
     return cantSabor;
 }
 
-int Platos::getVecesPreparado(){
+int Plates::getVecesPreparado(){
     return vecesPreparado;
 }
 
-void Platos::setVecesPreparado(int veces){
+void Plates::setVecesPreparado(int veces){
     vecesPreparado = veces;
 }
 
-int Platos::getPrecioPlato(){
+int Plates::getPrecioPlato(){
     return precioPlato;
 }
 
-void Platos::setPrecioPlato(int precioP){
+void Plates::setPrecioPlato(int precioP){
     precioPlato = precioP;
 }
 
-int Platos::getValoracionPlato(){
+int Plates::getValoracionPlato(){
     return valoracionPlato;
 }
 
-void Platos::setValoracionPlato(int valor){
+void Plates::setValoracionPlato(int valor){
     valoracionPlato = valor;
 }
 

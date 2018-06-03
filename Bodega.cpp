@@ -1,25 +1,24 @@
 #include "Bodega.h"
-#include "Ingredientes.h"
+#include <vector>
 
 using namespace std;
 
 Bodega::Bodega(){
+
 }
 
-void Bodega::setCantidadING(int cantidad){
+void Bodega::setCantidadIngredientes(int cantidad){
     cantidadIngredientes = cantidad;
 }
 
-int Bodega::getCantidadING(){  
+int Bodega::getCantidadIngredientes(){  
     return cantidadIngredientes;
 }
 
-int Bodega::getalgoING(int prueba){
-    //return ingredientes[inn];
-    return 0;
-}
+Ingredientes Bodega::getIngredientes(int i){
+     return ingredientes[i];
+ }
 
-
-void Bodega::setalgoING(int prueba){
-    //ingredientes.push_back(ing);
+void Bodega::setIngredientes(Ingredientes ing){
+    ingredientes.push_back(ing);
 }
