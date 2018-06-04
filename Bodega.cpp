@@ -15,10 +15,10 @@ int Bodega::getCantidadIngredientes(){
     return cantidadIngredientes;
 }
 
-Ingredientes Bodega::getIngredientes(int i){
-     return ingredientes[i];
+Ingredientes* Bodega::getIngredientes(int i){
+    return ingredientes[i];
  }
 
-void Bodega::setIngredientes(Ingredientes ing){
+void Bodega::setIngredientes(Ingredientes* ing){
     ingredientes.push_back(ing);
 }

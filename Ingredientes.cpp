@@ -46,11 +46,4 @@ int Ingredientes::getFechaVencimiento(){
     return fechaVencimiento;
 }
 
-/*Ingredientes* Ingredientes::getIngredientes(int i){
-    return Ingredientes[i];
-}
-
-void Ingredientes::setIngredientes(Ingredientes* ing){
-    ingredientes.push_back(ing);
-}*/
 
