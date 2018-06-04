@@ -14,7 +14,7 @@ int main(){
     Ingredientes* ingredientes;
     Plates* plates;
     int opcion = 0;
-
+while(opcion!=5){
     cout<<"Bienvenido al programa, elija una opcion: "<<endl;
     cout<<"1. Comprar: "<<endl;
     cout<<"2. Agregar platos: "<<endl;
@@ -22,7 +22,6 @@ int main(){
     cout<<"4. Ver Bodega: "<<endl;
     cout<<"5. Salir"<<endl;
     cin>>opcion;
-while(opcion!=5){
         switch(opcion){
         case 1: 
 
