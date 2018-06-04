@@ -10,18 +10,15 @@ using namespace std;
 class Bodega {
 
     public:
-        vector < Ingredientes* > ingredientes;
+        vector <Ingredientes*> ingredientes;
         int cantidadIngredientes;
-
-    public:
+        vector <Ingredientes*> getIngredientes();
 
         Bodega();
         void setCantidadIngredientes(int);
         int getCantidadIngredientes();
-        Ingredientes* getIngredientes(int);
         void setIngredientes(Ingredientes*); 
 };
-
 #endif
 
 

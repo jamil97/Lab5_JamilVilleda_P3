@@ -1,5 +1,6 @@
 #include "Bodega.h"
 #include <vector>
+#include <iostream>
 
 using namespace std;
 
@@ -15,9 +16,9 @@ int Bodega::getCantidadIngredientes(){
     return cantidadIngredientes;
 }
 
-Ingredientes* Bodega::getIngredientes(int i){
-    return ingredientes[i];
- }
+vector <Ingredientes*> Bodega:: getIngredientes(){
+    return ingredientes;
+}
 
 void Bodega::setIngredientes(Ingredientes* ing){
     ingredientes.push_back(ing);

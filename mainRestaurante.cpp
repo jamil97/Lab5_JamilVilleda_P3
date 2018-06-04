@@ -10,7 +10,7 @@ int main(){
     string tipoIngrediente = "";
     int cantSabor = 0;
     int duracionIngrediente = 0;
-    Bodega* bodega;
+    Bodega* bodega = new Bodega();
     Ingredientes* ingredientes;
     Plates* plates;
     int opcion = 0;
@@ -40,8 +40,8 @@ while(opcion!=5){
             cin>>cantSabor;
             cout<<"Ingrese la duracion del ingrediente: "<<endl;
             cin>>duracionIngrediente;
-            ingredientes = new Ingredientes(nombreIngrediente, tipoIngrediente, cantSabor, duracionIngrediente);
-            bodega->setIngredientes(ingredientes);
+          //  ingredientes = new Ingredientes(nombreIngrediente, tipoIngrediente, cantSabor, duracionIngrediente);
+            bodega->setIngredientes(new Ingredientes(nombreIngrediente, tipoIngrediente, cantSabor, duracionIngrediente);
             cout<<"Ingrediente agregado correctamente: "<<endl;
 
             break;
